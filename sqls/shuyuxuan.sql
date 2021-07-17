@@ -9,7 +9,7 @@ create table blog_user(
 create table config(
   id bigint(20) UNSIGNED not null primary key auto_increment comment "主键",
   name varchar(50) character set utf8mb4 comment "配置名称",
-  value varchar(255) character not null utf8mb4 comment "配置内容"
+  value varchar(255) character not null set utf8mb4 comment "配置内容"
   updated_time datetime not null default now() comment "修改时间",
 )engine=innodb charset=utf8 comment "配置表";
 
