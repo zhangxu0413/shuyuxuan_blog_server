@@ -28,7 +28,7 @@ create table article(
   id bigint(20) UNSIGNED not null primary key auto_increment comment "文章id",
   title varchar(100) character set utf8mb4 comment "文章标题",
   summery varchar(255) character set utf8mb4 comment "摘要",
-  connent longtext(5000) character set utf8mb4 comment "摘要",
+  content text character set utf8mb4 comment "摘要",
   categroy_id bigint(20) comment "分类Id",
   created_time datetime not null default now() comment "创建时间",
   updated_time datetime not null default now() comment "修改时间",
