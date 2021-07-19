@@ -1,5 +1,5 @@
 create table blog_user(
-  article_id bigint(20) UNSIGNED not null primary key auto_increment comment "文章id",
+  id bigint(20) UNSIGNED not null primary key auto_increment comment "文章id",
   name varchar(50) character set utf8mb4 comment "",
   created_time datetime not null default now() comment "创建时间",
   updated_time datetime not null default now() comment "修改时间",
